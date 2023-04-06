@@ -1,6 +1,7 @@
 import SmallCard from "@/components/SmallCard";
 import Head from "next/head";
 import styled from "styled-components";
+import data from "../data.json";
 
 const Heading = styled.h2``;
 
@@ -10,6 +11,7 @@ const Main = styled.main`
 `;
 
 export default function Home() {
+  console.log("data", data);
   return (
     <>
       <Head>
@@ -18,10 +20,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Main>
-        <div>
-          <Heading>Time tracking Dashboard</Heading>
-          <SmallCard />
-        </div>
+        <Heading>Time tracking Dashboard</Heading>
+        {data.map((item) => (
+          <SmallCard
+            key={item.title}
+            title={item.title}
+            current={item.timeframes.weekly.current}
+            previous={item.timeframes.weekly.previous}
+          />
+        ))}
       </Main>
     </>
   );
