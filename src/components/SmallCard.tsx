@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import data from "../data.json"
 
 const Card = styled.div`
   height: 350px;
@@ -14,18 +13,27 @@ const CardTop = styled.div`
 
 const CardBottom = styled.div`
   height: 225px;
-  background: lightblue;
+  background: hsl(235, 46%, 20%);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding: 25px 25px;
+
+  &:hover {
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+    
+  }
 `;
 
 const Category = styled.p`
   font-weight: 700;
   font-size: 1.5rem;
+  color: white;
 `;
 
-const Menu = styled.div``;
+const Menu = styled.div`
+  color: white;
+`;
 
 const CategoryContainer = styled.div`
   display: flex;
@@ -41,9 +49,11 @@ const HoursContainer = styled.div`
 
 const HoursText = styled.p`
   font-size: 4rem;
+  color: white;
 `
 const UpdateText = styled.p`
   font-size: 1.1rem;
+  color: white;
 `
 
 type SmallCardProps = {
@@ -54,8 +64,6 @@ type SmallCardProps = {
 
 
 export default function SmallCard({title, current , previous}: SmallCardProps) {
-
-  console.log(data, "data inside card")
   return (
     <>
       <Card>
