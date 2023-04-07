@@ -1,4 +1,4 @@
-import SmallCard from "@/components/SmallCard";
+import SmallCard from "@/components/SmallCard/SmallCard";
 import Head from "next/head";
 import styled from "styled-components";
 import data from "../data.json";
@@ -27,6 +27,7 @@ export default function Home() {
             title={item.title}
             current={item.timeframes.weekly.current}
             previous={item.timeframes.weekly.previous}
+            backgroundColor={item.backgroundColor}
           />
         ))}
       </Main>
