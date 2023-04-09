@@ -35,7 +35,7 @@ export default function SmallCard({
           </CategoryContainer>
           <HoursContainer>
             <HoursText>{current}</HoursText>
-            <s>Last week - {previous} hrs</s>
+            <UpdateText>Last week - {previous} hrs</UpdateText>
           </HoursContainer>
         </CardBottom>
       </Card>

@@ -5,8 +5,8 @@ export const Card = styled.div`
   width: 300px;
 `;
 
-export const CardTop = styled.div`
-  height: 75px;
+export const CardTop = styled.div<{backgroundColor: string }>`
+  height: 65px;
   background: ${(props) => props.backgroundColor || "lightred"};
 `;
 
