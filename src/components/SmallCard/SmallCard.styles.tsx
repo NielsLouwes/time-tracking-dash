@@ -3,11 +3,17 @@ import styled from "styled-components";
 export const Card = styled.div`
   height: 350px;
   width: 300px;
+  position: relative;
 `;
 
 export const CardTop = styled.div<{backgroundColor: string }>`
-  height: 65px;
   background: ${(props) => props.backgroundColor || "lightred"};
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+ 
 `;
 
 export const CardBottom = styled.div`
@@ -16,6 +22,7 @@ export const CardBottom = styled.div`
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding: 25px 25px;
+   z-index: 1;
 
   &:hover {
     background-color: hsl(235, 45%, 61%);

@@ -1,3 +1,4 @@
+import LargeCard from "@/components/LargeCard/LargeCard";
 import SmallCard from "@/components/SmallCard/SmallCard";
 import Head from "next/head";
 import styled from "styled-components";
@@ -15,7 +16,6 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* width: 100%; */
 `;
 
 const GridContainer = styled.div`
@@ -33,6 +33,7 @@ export default function Home() {
   return (
     <Main>
       <Heading>Time tracking Dashboard</Heading>
+      <LargeCard />
       <GridContainer>
         {data.map((item) => (
           <SmallCard
