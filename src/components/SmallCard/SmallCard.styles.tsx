@@ -54,7 +54,7 @@ export const HoursContainer = styled.div`
 `;
 
 export const HoursText = styled.p`
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: white;
 `;
 export const UpdateText = styled.p`

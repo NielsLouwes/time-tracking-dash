@@ -15,7 +15,8 @@
         "previous": 128
       }
     },
-    "backgroundColor": "hsl(15, 100%, 70%)"
+    "backgroundColor": "hsl(15, 100%, 70%)",
+    "imageSrc": "/icon-work.svg"
   },
   {
     "title": "Play",
@@ -33,7 +34,8 @@
         "previous": 29
       }
     },
-    "backgroundColor": "hsl(195, 74%, 62%)"
+    "backgroundColor": "hsl(195, 74%, 62%)",
+     "imageSrc": "/icon-play.svg"
   },
   {
     "title": "Study",
@@ -51,7 +53,8 @@
         "previous": 19
       }
     },
-    "backgroundColor": "hsl(348, 100%, 68%)"
+    "backgroundColor": "hsl(348, 100%, 68%)",
+    "imageSrc": "/icon-study.svg"
   },
   {
     "title": "Exercise",
@@ -69,7 +72,8 @@
         "previous": 18
       }
     },
-    "backgroundColor": "hsl(145, 58%, 55%)"
+    "backgroundColor": "hsl(145, 58%, 55%)",
+    "imageSrc": "/icon-exercise.svg"
   },
   {
     "title": "Social",
@@ -87,7 +91,8 @@
         "previous": 23
       }
     },
-    "backgroundColor": "hsl(264, 64%, 52%)"
+    "backgroundColor": "hsl(264, 64%, 52%)",
+     "imageSrc": "/icon-social.svg"
   },
   {
     "title": "Self Care",
@@ -105,7 +110,8 @@
         "previous": 11
       }
     },
-    "backgroundColor": "hsl(43, 84%, 65%)"
+    "backgroundColor": "hsl(43, 84%, 65%)",
+    "imageSrc": "/icon-self-care.svg"
   }
 ]
 

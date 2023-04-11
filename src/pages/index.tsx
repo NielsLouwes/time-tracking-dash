@@ -18,6 +18,7 @@ export default function Home() {
               current={item.timeframes.weekly.current}
               previous={item.timeframes.weekly.previous}
               backgroundColor={item.backgroundColor}
+              imageSrc={item.imageSrc}
             />
           ))}
         </GridContainer>
