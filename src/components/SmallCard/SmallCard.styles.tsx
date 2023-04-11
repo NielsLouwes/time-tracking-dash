@@ -1,28 +1,30 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  /* height: 250px; */
-  width: 250px;
+  height: 250px;
+  width: 200px;
   position: relative;
 `;
 
-export const CardTop = styled.div<{backgroundColor: string }>`
-  background: ${(props) => props.backgroundColor || "lightred"};
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 15%;
- 
+export const CardTop = styled.div<{ backgroundColor: string }>`
+  width: 100%;
+  height: 100px;
+  background-color: ${(props) => props.backgroundColor};
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const CardBottom = styled.div`
   height: 225px;
   background: hsl(235, 46%, 20%);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
   padding: 25px 25px;
-   z-index: 1;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 32px;
 
   &:hover {
     background-color: hsl(235, 45%, 61%);

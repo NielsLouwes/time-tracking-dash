@@ -4,16 +4,18 @@ export const Card = styled.div`
   height: 500px;
   width: 300px;
   margin-right: 50px;
+  position: relative;
 `;
 
 export const CardTop = styled.div`
-  height: 350px;
+  height: 400px;
   background: hsl(246, 80%, 60%);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 35px;
+ 
 `;
 
 export const ImageDiv = styled.div`
@@ -36,6 +38,12 @@ export const CardBottom = styled.div`
   color: white;
   padding-left: 35px;
   padding-top: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  width: 100%;
+  bottom: -45px;
+   z-index: 1;
 `;
 
 export const TimePeriod = styled.div`
