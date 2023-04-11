@@ -4,6 +4,10 @@ export const Card = styled.div`
   height: 250px;
   width: 200px;
   position: relative;
+
+  @media screen and (max-width: 400px) {
+   width: 300px;
+  }
 `;
 
 export const CardTop = styled.div<{ backgroundColor: string }>`

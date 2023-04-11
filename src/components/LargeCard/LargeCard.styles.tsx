@@ -5,6 +5,12 @@ export const Card = styled.div`
   width: 250px;
   margin-right: 50px;
   position: relative;
+
+  @media screen and (max-width: 400px) {
+   width: 300px;
+   padding-left: 45px;
+   height: 250px;
+  }
 `;
 
 export const CardTop = styled.div`
@@ -15,7 +21,15 @@ export const CardTop = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 35px;
- 
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 20px;
+  }
 `;
 
 export const ImageDiv = styled.div`
@@ -24,12 +38,22 @@ export const ImageDiv = styled.div`
 
 export const ReportForText = styled.p`
   color: lightgrey;
+
+  @media screen and (max-width: 400px) {
+    margin-left: 15px;
+    font-size: 12px;
+  }
 `;
 
 export const Name = styled.p`
   font-size: 2rem;
   font-weight: 700;
   color: white;
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
 `;
 
 export const CardBottom = styled.div`
@@ -43,9 +67,20 @@ export const CardBottom = styled.div`
   position: absolute;
   width: 100%;
   bottom: -45px;
-   z-index: 1;
+  z-index: 1;
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    position: static;
+    height: 75px;
+  }
 `;
 
 export const TimePeriod = styled.div`
   margin-bottom: 15px;
+
+  @media screen and (max-width: 400px) {
+    margin-right: 15px;
+  }
 `;
