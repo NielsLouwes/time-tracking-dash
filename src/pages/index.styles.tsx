@@ -1,4 +1,11 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    min-height: 100%;
+    background: #070606;
+  }
+`;
 
 export const Heading = styled.h2`
   margin-bottom: 50px;
@@ -6,14 +13,14 @@ export const Heading = styled.h2`
 
 export const Main = styled.main`
   /* background: white; */
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #070606;
 
   @media screen and (max-width: 400px) {
-    height: 100vh;
+    /* height: 100vh; */
   }
 `;
 
@@ -38,7 +45,7 @@ export const GridContainer = styled.div`
 
   @media screen and (max-width: 400px) {
     grid-template-columns: repeat(1, 1fr);
-    height: auto;
+    height: 100vh;
   }
   
 `;

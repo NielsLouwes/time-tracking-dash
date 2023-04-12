@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const Card = styled.div`
   height: 500px;
   width: 250px;
-  margin-right: 50px;
+  margin-right: 25px;
   position: relative;
 
   @media screen and (max-width: 400px) {
-   width: 300px;
-   padding-left: 45px;
+   width: 350px;
+   padding-left: 35px;
    height: 250px;
   }
 `;
@@ -81,6 +81,7 @@ export const TimePeriod = styled.div`
   margin-bottom: 15px;
 
   @media screen and (max-width: 400px) {
-    margin-right: 15px;
+    margin-right: 25px;
+    margin-left: 15px;
   }
 `;

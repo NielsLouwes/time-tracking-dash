@@ -6,7 +6,9 @@ export const Card = styled.div`
   position: relative;
 
   @media screen and (max-width: 400px) {
-   width: 300px;
+   width: 320px;
+   margin-left: 25px;
+   height: 150px;
   }
 `;
 
@@ -18,6 +20,12 @@ export const CardTop = styled.div<{ backgroundColor: string }>`
   border-top-right-radius: 15px;
   display: flex;
   justify-content: flex-end;
+
+  &:hover {
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+    height: 125px;
+  }
 `;
 
 export const CardBottom = styled.div`
@@ -33,6 +41,11 @@ export const CardBottom = styled.div`
   &:hover {
     background-color: hsl(235, 45%, 61%);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 125px;
+    margin: 0;
   }
 `;
 
@@ -55,13 +68,29 @@ export const HoursContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+
+  @media screen and (max-width: 400px) {
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+  }
 `;
 
 export const HoursText = styled.p`
   font-size: 3.5rem;
   color: white;
+
+  @media screen and (max-width: 400px) {
+   flex-direction: row;
+   font-size: 2.0rem;
+  }
 `;
 export const UpdateText = styled.p`
   font-size: 1.1rem;
   color: white;
+
+  @media screen and (max-width: 400px) {
+   flex-direction: row;
+   font-size: 1.0rem;
+  }
 `;
