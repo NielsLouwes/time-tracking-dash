@@ -10,7 +10,13 @@ import {
 } from "./LargeCard.styles";
 import Image from "next/image";
 
-export default function LargeCard({handleTimeframeChange}) {
+type handleTimeframeChangeProps = () => void;
+
+interface LargeCardProps {
+  myFunctionProp: handleTimeframeChangeProps;
+}
+
+export default function LargeCard({handleTimeframeChange}: LargeCardProps) {
   return (
     <>
       <Card>

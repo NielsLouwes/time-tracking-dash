@@ -32,16 +32,15 @@ export default function SmallCard({
 
   const returnCorrectText = () => {
     if (timeframe === 'daily') {
-      return 'yesterday'
+      return 'Yesterday'
     }
 
     else if (timeframe === "weekly") {
-      return 'week';
+      return 'Last week';
     } 
-    return 'month'
+    return 'Last month'
   }
 
-  console.log('timeframe', returnCorrectText());
   return (
     <>
       <Card>
@@ -60,7 +59,7 @@ export default function SmallCard({
           </CategoryContainer>
           <HoursContainer>
             <HoursText>{current}hrs</HoursText>
-            <UpdateText>Last {returnCorrectText()} - {previous} hrs</UpdateText>
+            <UpdateText>{returnCorrectText()} - {previous} hrs</UpdateText>
           </HoursContainer>
         </CardBottom>
       </Card>

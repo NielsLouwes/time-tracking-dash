@@ -10,7 +10,7 @@ export default function Home() {
  function handleTimeframeChange(newTimeframe: string) {
   setTimeframe(newTimeframe);
 }
-  console.log("data", data);
+
   return (
     <>
       <GlobalStyle />
