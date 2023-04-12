@@ -62,6 +62,7 @@ export const CardBottom = styled.div`
   color: white;
   padding-left: 35px;
   padding-top: 25px;
+  
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
@@ -79,6 +80,7 @@ export const CardBottom = styled.div`
 
 export const TimePeriod = styled.div`
   margin-bottom: 15px;
+  cursor: pointer;
 
   @media screen and (max-width: 400px) {
     margin-right: 25px;

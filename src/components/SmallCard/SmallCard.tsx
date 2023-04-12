@@ -18,6 +18,7 @@ type SmallCardProps = {
   previous: number;
   backgroundColor: string;
   imageSrc: string;
+  timeframe: string;
 };
 
 export default function SmallCard({
@@ -26,7 +27,21 @@ export default function SmallCard({
   previous,
   backgroundColor,
   imageSrc,
+  timeframe = 'weekly',
 }: SmallCardProps) {
+
+  const returnCorrectText = () => {
+    if (timeframe === 'daily') {
+      return 'yesterday'
+    }
+
+    else if (timeframe === "weekly") {
+      return 'week';
+    } 
+    return 'month'
+  }
+
+  console.log('timeframe', returnCorrectText());
   return (
     <>
       <Card>
@@ -45,7 +60,7 @@ export default function SmallCard({
           </CategoryContainer>
           <HoursContainer>
             <HoursText>{current}hrs</HoursText>
-            <UpdateText>Last week - {previous} hrs</UpdateText>
+            <UpdateText>Last {returnCorrectText()} - {previous} hrs</UpdateText>
           </HoursContainer>
         </CardBottom>
       </Card>

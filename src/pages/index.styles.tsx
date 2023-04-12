@@ -12,16 +12,11 @@ export const Heading = styled.h2`
 `;
 
 export const Main = styled.main`
-  /* background: white; */
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #070606;
 
-  @media screen and (max-width: 400px) {
-    /* height: 100vh; */
-  }
 `;
 
 export const Wrapper = styled.div`

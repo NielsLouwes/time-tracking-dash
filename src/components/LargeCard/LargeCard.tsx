@@ -10,7 +10,7 @@ import {
 } from "./LargeCard.styles";
 import Image from "next/image";
 
-export default function LargeCard() {
+export default function LargeCard({handleTimeframeChange}) {
   return (
     <>
       <Card>
@@ -29,9 +29,9 @@ export default function LargeCard() {
           </div>
         </CardTop>
         <CardBottom>
-          <TimePeriod>Daily</TimePeriod>
-          <TimePeriod>Weekly</TimePeriod>
-          <TimePeriod>Monthly</TimePeriod>
+          <TimePeriod onClick={() => handleTimeframeChange('daily')}>Daily</TimePeriod>
+          <TimePeriod onClick={() => handleTimeframeChange('weekly')}>Weekly</TimePeriod>
+          <TimePeriod onClick={() => handleTimeframeChange('monthly')}>Monthly</TimePeriod>
         </CardBottom>
       </Card>
     </>
