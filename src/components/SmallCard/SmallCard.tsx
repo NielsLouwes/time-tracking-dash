@@ -31,14 +31,14 @@ export default function SmallCard({
 }: SmallCardProps) {
 
   const returnCorrectText = () => {
-    if (timeframe === 'daily') {
-      return 'Yesterday'
+    switch(timeframe) {
+      case 'daily':
+        return "Yesterday";
+      case 'weekly':
+        return "Last week";
+      default: 
+        return "Last month"
     }
-
-    else if (timeframe === "weekly") {
-      return 'Last week';
-    } 
-    return 'Last month'
   }
 
   return (
