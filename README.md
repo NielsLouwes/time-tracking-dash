@@ -36,3 +36,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Screenshots
+
+Desktop
+<img width="1442" alt="image" src="https://github.com/NielsLouwes/time-tracking-dash/assets/76694402/a7ceb0a8-db1e-46e5-94ae-1d6bb8c647f4">
+
+Mobile
+<img width="389" alt="image" src="https://github.com/NielsLouwes/time-tracking-dash/assets/76694402/9081bb84-a42c-4820-99db-4ece11a3bb62">
+
+
