@@ -1,0 +1,1 @@
+type Timeframe = 'daily' | 'weekly' | 'monthly';

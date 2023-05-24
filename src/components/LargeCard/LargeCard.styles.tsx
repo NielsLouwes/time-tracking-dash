@@ -8,7 +8,7 @@ export const Card = styled.div`
 
   @media screen and (max-width: 400px) {
    width: 350px;
-   padding-left: 35px;
+   padding-left: 20px;
    height: 250px;
   }
 `;

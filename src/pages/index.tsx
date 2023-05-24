@@ -5,9 +5,9 @@ import data from "../data.json";
 import { GlobalStyle, GridContainer, Heading, Main, Wrapper } from "./index.styles";
 
 export default function Home() {
-  const [timeframe, setTimeframe] = useState('weekly');
+  const [timeframe, setTimeframe] = useState<Timeframe>('weekly');
 
- function handleTimeframeChange(newTimeframe: string) {
+ function handleTimeframeChange(newTimeframe: Timeframe) {
   setTimeframe(newTimeframe);
 }
 
