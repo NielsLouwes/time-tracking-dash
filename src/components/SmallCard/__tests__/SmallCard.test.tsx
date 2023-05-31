@@ -2,17 +2,13 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import SmallCard from "../SmallCard";
 
-jest.mock("next/image", () => {
-  return () => <img />;
-});
-
 describe("SmallCard component", () => {
   const defaultProps = {
     title: "Work",
     current: 5,
     previous: 2,
     backgroundColor: "blue",
-    imageSrc: "some_image.png",
+    imageSrc: "/some_image.png",
     timeframe: "daily",
   };
 

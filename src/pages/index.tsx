@@ -2,14 +2,20 @@ import { useState } from "react";
 import LargeCard from "@/components/LargeCard/LargeCard";
 import SmallCard from "@/components/SmallCard/SmallCard";
 import data from "../data.json";
-import { GlobalStyle, GridContainer, Heading, Main, Wrapper } from "./index.styles";
+import {
+  GlobalStyle,
+  GridContainer,
+  Heading,
+  Main,
+  Wrapper,
+} from "../styles/index.styles";
 
 export default function Home() {
-  const [timeframe, setTimeframe] = useState<Timeframe>('weekly');
+  const [timeframe, setTimeframe] = useState<Timeframe>("weekly");
 
- function handleTimeframeChange(newTimeframe: Timeframe) {
-  setTimeframe(newTimeframe);
-}
+  function handleTimeframeChange(newTimeframe: Timeframe) {
+    setTimeframe(newTimeframe);
+  }
 
   return (
     <>
