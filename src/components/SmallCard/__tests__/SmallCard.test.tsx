@@ -12,21 +12,19 @@ describe("SmallCard component", () => {
     timeframe: "daily",
   };
 
-  it("should render the Work title on the card", () => {
+  beforeEach(() => {
     render(<SmallCard {...defaultProps} />);
+  });
 
+  it("should render the Work title on the card", () => {
     expect(screen.getByText("Work")).toBeInTheDocument();
   });
 
   it("should render the correct timeframe of yesterday based on daily prop", () => {
-    render(<SmallCard {...defaultProps} />);
-
     expect(screen.getByText("Yesterday - 2 hrs")).toBeInTheDocument();
   });
 
   it("should render the correct current hours text ", () => {
-    render(<SmallCard {...defaultProps} />);
-
     expect(screen.getByText("5hrs")).toBeInTheDocument();
   });
 

@@ -30,7 +30,7 @@ export default function SmallCard({
   timeframe = 'weekly',
 }: SmallCardProps) {
 
-  const returnCorrectText = () => {
+  const renderTimeFrame = () => {
     switch(timeframe) {
       case 'daily':
         return "Yesterday";
@@ -59,7 +59,7 @@ export default function SmallCard({
           </CategoryContainer>
           <HoursContainer>
             <HoursText>{current}hrs</HoursText>
-            <UpdateText>{returnCorrectText()} - {previous} hrs</UpdateText>
+            <UpdateText>{renderTimeFrame()} - {previous} hrs</UpdateText>
           </HoursContainer>
         </CardBottom>
       </Card>
